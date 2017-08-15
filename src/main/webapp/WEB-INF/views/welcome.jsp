@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Welcome!</title>
+    <link rel="stylesheet" href="/resources/styles.css">
+
 </head>
 <body>
 <h1> Java me <i>This</i>, Java me <i>That</i>, Coffee WholeSaler</h1>

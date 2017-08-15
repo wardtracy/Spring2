@@ -9,6 +9,7 @@
 <html>
 <head>
     <title>Thank You</title>
+    <link href="/resources/style.css" rel="stylesheet">
 </head>
 <body>
 

@@ -1,15 +1,15 @@
 package com.test.util;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
+        import org.springframework.stereotype.Controller;
+        import org.springframework.web.bind.annotation.RequestMapping;
+        import org.springframework.web.bind.annotation.RequestParam;
+        import org.springframework.web.servlet.ModelAndView;
 
-import javax.swing.*;
-import javax.xml.transform.Result;
-import javax.xml.ws.Action;
-import java.sql.*;
-import java.util.ArrayList;
+        import javax.swing.*;
+        import javax.xml.transform.Result;
+        import javax.xml.ws.Action;
+        import java.sql.*;
+        import java.util.ArrayList;
 
 @Controller
 public class HomeController {
@@ -69,12 +69,12 @@ public class HomeController {
             ResultSet results = readCustomers.executeQuery(readCustomersCommmand);
 
             //array list of customers
-            ArrayList<Customer> customerList = new ArrayList<Customer>();
+            ArrayList<Items> customerList = new ArrayList<Items>();
 
             //map form the ResultSet to the ArrayList
-            while (results.next())
-            {
-                Customer temp = new Customer(results.getString(1), results.getString(2));
+            while (results.next()){
+
+                Items temp = new Items(results.getString(1), results.getString(2), results.getInt(3),results.getFloat(4));
                 customerList.add(temp);
             }
 

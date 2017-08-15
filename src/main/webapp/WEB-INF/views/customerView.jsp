@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<link href="/resources/style.css" rel="stylesheet">
 <html>
 <head>
     <title>Title</title>
@@ -16,18 +17,18 @@
 <table border="1">
 
     <tr>
-        <th>CustomerID</th>
-        <th>CompanyName</th>
+        <th>name</th>
+        <th>description</th>
     </tr>
     <c:forEach items="${cList}" var="item">
 
         <tr>
             <td>
-                ${item.customerID}
+                ${item.name}
             </td>
 
             <td>
-                ${item.companyName}
+                ${item.description}
             </td>
         </tr>
 
