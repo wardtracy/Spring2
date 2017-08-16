@@ -31,7 +31,11 @@ public class HomeController {
 
     @RequestMapping("/formhandler")
 
-    public ModelAndView formhandler(@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname, @RequestParam("email") String email, @RequestParam("phonenumber") String phonenumber, @RequestParam("password") String password) {
+    public ModelAndView formhandler(@RequestParam("firstname") String firstname,
+                                    @RequestParam("lastname") String lastname,
+                                    @RequestParam("email") String email,
+                                    @RequestParam("phonenumber") String phonenumber,
+                                    @RequestParam("password") String password) {
 
 
         ModelAndView mv = new ModelAndView("formresponse");
@@ -49,7 +53,7 @@ public class HomeController {
     public ModelAndView getAllCustomers() {
 
         //Define the data for the connection
-        String dbAddress = "jdbc:mysql://localhost:3306/northwind";
+        String dbAddress = "jdbc:mysql://localhost:3306/coffeeshopdb";
         String username = "root";
         String password = "LetMeIN";
 

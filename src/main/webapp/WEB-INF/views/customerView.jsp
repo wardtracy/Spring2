@@ -19,6 +19,9 @@
     <tr>
         <th>name</th>
         <th>description</th>
+        <th>quantity</th>
+        <th>price</th>
+
     </tr>
     <c:forEach items="${cList}" var="item">
 
@@ -30,7 +33,26 @@
             <td>
                 ${item.description}
             </td>
+
+            <td>
+                    ${item.quantity}
+            </td>
+
+            <td>
+                    ${item.price}
+            </td>
         </tr>
+
+
+
+
+
+
+
+
+
+
+
 
     </c:forEach>
 </table>

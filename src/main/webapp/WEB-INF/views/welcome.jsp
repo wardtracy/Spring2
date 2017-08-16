@@ -2,14 +2,16 @@
 <html>
 <head>
     <title>Welcome!</title>
-    <link rel="stylesheet" href="/resources/styles.css">
+    <link rel="stylesheet" href="/resources/style.css">
+
 
 </head>
 <body>
-<h1> Java me <i>This</i>, Java me <i>That</i>, Coffee WholeSaler</h1>
+<h1> Java me <em><i>This</i></em>, Java me <em><i>That</i></em>, Coffee WholeSaler</h1>
 
 ${message}<br/>
-Welcome to Detroit's <em> <b> #1 ranked  </b> </em> Coffee WholeSaler!
+
+Welcome to Detroit's <em><b> #1 ranked  </b></em> Coffee WholeSaler!
 <br>
 
 <a href="userform">Register</a>
