@@ -87,7 +87,7 @@ ${inst}
         <input type="password" name="password"><br><br>
 
         <input type="radio" name="age" value="senior citizen"> Business Owner<br>
-        (Bus. Owners purchasing over 10 units, receive a 20% discount)<br>
+        (Bus. Owners purchasing over 50 units, will receive a 20% discount)<br>
         (All units = 1lb)<br><br>
 
         <input type="submit" name="submit" value="Submit">

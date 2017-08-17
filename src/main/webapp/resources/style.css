@@ -5,11 +5,18 @@ body {
     text-align: center;
 }
 
-#background{
-    
-}
-
 h1{
     text-align: center;
+    font-size: 60px;
 }
 
+h3{
+
+
+}
+
+.box1{
+    border-color: black;
+
+
+}

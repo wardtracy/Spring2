@@ -19,7 +19,7 @@ public class HomeController {
 
     public ModelAndView helloWorld() {
 
-        return new ModelAndView("welcome", "message", "Greetings and Salutations,");
+        return new ModelAndView("welcome", "message", "Greetings");
     }
 
 
@@ -31,20 +31,20 @@ public class HomeController {
 
     @RequestMapping("/formhandler")
 
-    public ModelAndView formhandler(@RequestParam("firstname") String firstname,
-                                    @RequestParam("lastname") String lastname,
-                                    @RequestParam("email") String email,
+    public ModelAndView formhandler(@RequestParam("firstname"  ) String firstname,
+                                    @RequestParam("lastname"   ) String lastname,
+                                    @RequestParam("email"      ) String email,
                                     @RequestParam("phonenumber") String phonenumber,
-                                    @RequestParam("password") String password) {
+                                    @RequestParam("password"   ) String password) {
 
 
         ModelAndView mv = new ModelAndView("formresponse");
 
-        mv.addObject("firstname", firstname);
-        mv.addObject("lastname", lastname);
-        mv.addObject("email", email);
+        mv.addObject("firstname"  , firstname);
+        mv.addObject("lastname"   , lastname);
+        mv.addObject("email"      , email);
         mv.addObject("phonenumber", phonenumber);
-        mv.addObject("password", password);
+        mv.addObject("password"   , password);
         return mv;
     }
 
